@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@300;400;700&display=swap");
+/* CSS HEX */
+.btn, body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  min-height: 100vh;
+}
+
+#calculator {
+  background-color: #1f2527;
+  box-shadow: 0rem 1rem 1.875rem -0.625rem #1f2527;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  color: #e4e2b9;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+.btn {
+  border-radius: 0.2rem;
+  margin: 0.3rem;
+  font-size: 1.5rem;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+.big {
+  margin: 0;
+  margin-left: 0.5rem;
+}
+
+#screen {
+  background-color: #afb2a7;
+  min-width: 25rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  border: 0.5rem solid #5f635e;
+  border-radius: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-transform: uppercase;
+  grid-column: 1/-1;
+  grid-row: 1/4;
+}
+
+#formula, #display {
+  font-size: 1.2rem;
+  height: 1rem;
+  text-align: right;
+  font-family: "Press Start 2P", cursive;
+}
+
+#clear {
+  background-color: #ca9318;
+  grid-column: 10/-1;
+  grid-row: 4/8;
+}
+
+#main {
+  background-color: #90784e;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-column: 1/10;
+  grid-row: 4/-1;
+}
+
+#numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#operators {
+  display: grid;
+}
+
+.number {
+  background-color: #524b3f;
+}
+
+.operator {
+  background-color: #524b3f;
+}
+
+#equals {
+  background-color: #3F91B8;
+  grid-column: 10/-1;
+  grid-row: 8/-1;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 480px) {
+  #calculator {
+    box-shadow: 0rem 1rem 1.875rem -0.625rem #1f2527;
+    padding: 1rem;
+  }
+  .btn {
+    font-size: 1.3rem;
+  }
+  .big {
+    margin-left: 0.3rem;
+  }
+  #screen {
+    min-width: 18rem;
+    margin-bottom: 1rem;
+    border: 0.3rem solid #5f635e;
+  }
+  #formula, #display {
+    font-size: 0.9rem;
+  }
+}/*# sourceMappingURL=main.css.map */
